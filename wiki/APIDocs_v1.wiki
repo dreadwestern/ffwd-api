@@ -6,55 +6,6 @@
 
 The FFWD API provides a RESTful way of interacting with the FFWD website using other applications or widgets. Because we are still in private beta, the documentation provided is a work in progress, and will be updated as we make more features of the API available to developers.
 
-
-== Authentication ==
-
-At the present time, we only require that you provide a valid developer key in the request in order to validate access. All requests require that you include the `api_key` request parameter.
-
-All our API methods currently return data that is publically viewable on the user's public profile page. As we continue to improve our API, we will be introducing an authentication mechanism that will allow developers to interact with private account data.
-
-
-== Making a Request ==
-
-All API requests are made by sending a validly formatted GET request string to our server using the API base URL, and any associated parameters required for the method you're using.
-
-The API base URL is: http://www.ffwd.com/api/v1/
-
-For example, this request retrieves a user's public profile:
-
-{{{
-http://www.ffwd.com/api/v1/profile/ffwduser?api_key=abcdefg12345678
-}}}
-
-See the method documentation for specific examples of each type of API request supported and the data format returned.
-
-
-== Data Formats ==
-
-The type of data returned is XML by default, but can also be returned as JSON for use in a Javascript application or widget. The `type` parameter is used to override the default data format returned.
-
-For example, to return data as a JSON-encoded string, you would use:
-
-{{{
-http://www.ffwd.com/api/v1/profile/ffwduser?api_key=abcdefg12345678&type=json
-}}}
-
-
-== Error Handling ==
-
-Error status is reported as part of the response:
-
-{{{
-<?xml version="1.0"?>
-<response>
-  <status>101</status>
-  <message>Authorization required.</message>
-</response>
-}}}
-
-Error status is reported for each request. Custom error codes are listed in the table below.
-
-|| *Error Code* || *Description* ||
-|| 0 || No errors ||
-|| 100 || Invalid URL or API method ||
-|| 101 || Invalid API key authentication ||
+Additional information is provided on the pages below:
+[APIUsage_v1 Using the API]
+[APIMethods_v1 API Methods]
