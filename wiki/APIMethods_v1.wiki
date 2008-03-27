@@ -2,7 +2,18 @@
 
 = Methods List =
 
-The following API methods are currently available.
+The following API methods are currently available:
+
+|| *Method* || *Description* ||
+|| profile || Returns the user's public profile ||
+|| profile_favorites || Returns the list of favorite videos that appear on a user's public profile ||
+|| profile_friends || Returns the list of favorite friends that appear on a user's public profile ||
+|| profile_shares || Returns the list of recently shared videos that appear on a user's public profile ||
+|| profile_shows || Returns the list of favorite TV shows that appear on a user's public profile ||
+|| personality || Returns the video personality type that appears on a user's public profile ||
+
+
+Method descriptions and usage are provided below.
 
 
 == profile ==
@@ -215,8 +226,6 @@ Returns the user's video personality.
   </personality>
 </response>
 }}}
-
-
 
 
 
