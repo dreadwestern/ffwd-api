@@ -2,12 +2,12 @@
 
 = FFWD API Documentation =
 
-== Overview ==
-
 The FFWD API provides a RESTful way of interacting with the FFWD website using other applications or widgets. Because we are still in private beta, the documentation provided is a work in progress, and will be updated as we make more features of the API available to developers.
 
 Additional information is provided on the pages below:
 
-[APIUsage_v1 API Usage]
+[APIUsage_v1 Usage Overview]
 
-[APIMethods_v1 API Methods]
+[APIMethods_v1 Methods List]
+
+[APIParameters_v1 Parameters List]
