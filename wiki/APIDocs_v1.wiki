@@ -4,7 +4,7 @@
 
 == Overview ==
 
-The FFWD API provides a REST-based way of interacting with the FFWD website using other applications or widgets. Because we are still in private beta, the documentation provided is a work in progress, and will be updated as we make more features of the API available to developers.
+The FFWD API provides a RESTful way of interacting with the FFWD website using other applications or widgets. Because we are still in private beta, the documentation provided is a work in progress, and will be updated as we make more features of the API available to developers.
 
 
 == Authentication ==
