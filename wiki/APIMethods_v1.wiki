@@ -115,3 +115,109 @@ Returns the list of friends that appear on a user's public profile.
   </friend>
 </response>
 }}}
+
+
+== profile_shares ==
+
+*Description:* 
+
+Returns the list of recently shared videos that appear on a user's public profile.
+
+
+*Request format:*
+
+{{{
+/api/v1/profile_shares/[user_name]?api_key=[api_key]
+}}}
+
+
+*Response format:*
+
+{{{
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <video>
+    <title>Amy Winehouse Parody - Katy Brand Rehab Booze</title>
+    <image_url>http://images.ffwd.com/images/thumbs/1/2/125582_thumb.jpg</image_url>
+    <preview_url>http://www.ffwd.com/videos/view/125582</preview_url>
+  </video>
+  <video>
+    <title>Tim And Eric - Salame</title>
+    <image_url>http://images.ffwd.com/images/thumbs/2/0/200760_thumb.jpg</image_url>
+    <preview_url>http://www.ffwd.com/videos/view/200760</preview_url>
+  </video>
+</response>
+}}}
+
+
+
+== profile_shows ==
+
+*Description:* 
+
+Returns the list of favorite TV shows that appear on a user's public profile.
+
+
+*Request format:*
+
+{{{
+/api/v1/profile_shows/[user_name]?api_key=[api_key]
+}}}
+
+
+*Response format:*
+
+{{{
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <show>
+    <title>The Office</title>
+    <image_url>http://images.ffwd.com/images/shows/office_120.jpg</image_url>
+  </show>
+  <show>
+    <title>Lost</title>
+    <image_url>http://images.ffwd.com/images/shows/lost_120.jpg</image_url>
+  </show>
+</response>
+}}}
+
+
+
+== personality ==
+
+*Description:* 
+
+Returns the user's video personality.
+
+
+*Request format:*
+
+{{{
+/api/v1/personality/[user_name]?api_key=[api_key]
+}}}
+
+
+*Response format:*
+
+{{{
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <personality>
+    <title>the hero</title>
+    <image_url>http://images.ffwd.com/images/personalities/15.jpg</image_url>
+    <description>Ah, fellow traveler, you have chosen... wisely. You truly appreciate the art of the epic story.</description>
+  </personality>
+</response>
+}}}
+
+
+
+
+
+
