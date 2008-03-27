@@ -1,11 +1,13 @@
 #summary API Documentation v1 (beta)
 
+= FFWD API Documentation =
+
 == Overview ==
 
-Our API provides a REST-based way of interacting with the ffwd site through other applications or widgets. This documentation outlines for you how our API can be used.
+The FFWD API provides a REST-based way of interacting with the FFWD website using other applications or widgets. Because we are still in private beta, the documentation provided is a work in progress, and will be updated as we make more features of the API available to developers.
 
 
-== Request format ==
+== Making a Request ==
 
 All API requests are made by sending a validly formatted GET request string to our server using the API base URL, and any associated parameters required for the method you're using.
 
@@ -20,7 +22,7 @@ http://www.ffwd.com/api/v1/profile/ffwduser?api_key=abcdefg12345678
 See the method documentation for specific examples of each type of API request supported and the data format returned.
 
 
-== Data formats ==
+== Data Formats ==
 
 The type of data returned is XML by default, but can also be returned as JSON for use in a Javascript application or widget.
 
@@ -31,7 +33,7 @@ http://www.ffwd.com/api/v1/profile/ffwduser?api_key=abcdefg12345678&type=json
 }}}
 
 
-== Error handling ==
+== Error Handling ==
 
 Error status is reported as part of the response:
 
@@ -51,6 +53,8 @@ Error status is reported for each request. Custom error codes are listed in the 
 || 101 || Invalid API key authentication ||
 
 
-== Client authentication ==
+== Authentication ==
 
-At the moment, we only require that you provide a valid developer API key in your request, in order to limit spam requests on our servers. All our API methods currently return data that is publically viewable on the user's public profile page. As we continue to improve our API, we will be introducing an account authentication mechanism for retrieving private account data.
+At the present time, we only require that you provide a valid developer key in the request in order to validate access.
+
+All our API methods currently return data that is publically viewable on the user's public profile page. As we continue to improve our API, we will be introducing an account authentication mechanism for retrieving private account data.  We are currently evaluating options for this.
