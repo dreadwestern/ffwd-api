@@ -13,13 +13,14 @@ The following table lists the API methods that are currently available:
 || _personality_ || Returns the video personality type that appears on a user's profile page ||
 
 
+
 = Method Usage =
 
 == profile ==
 
 *Description:* 
 
-Returns the user's public profile
+Returns the user's public profile data.
 
 
 *Request format:*
@@ -52,3 +53,79 @@ Returns the user's public profile
   </profile>
 </response>
 }}}
+
+
+
+== profile_favorites ==
+
+*Description:* 
+
+Returns the list of favorite videos that appear on a user's public profile.
+
+
+*Request format:*
+
+{{{
+/api/v1/profile_favorites/[user_name]?api_key=[api_key]
+}}}
+
+
+*Response format:*
+
+{{{
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <video>
+    <title>Synthesizer Medley 1985</title>
+    <image_url>http://images.ffwd.com/images/thumbs/8/1/81464_thumb.jpg</image_url>
+    <preview_url>http://www.ffwd.com/videos/view/81464</preview_url>
+  </video>
+  <video>
+    <title>Mr. Show: Three Times One Minus One</title>
+    <image_url>http://images.ffwd.com/images/thumbs/5/8/58474_thumb.jpg</image_url>
+    <preview_url>http://www.ffwd.com/videos/view/58474</preview_url>
+  </video>
+</response>
+}}}
+
+
+== profile_friends ==
+
+*Description:* 
+
+Returns the list of friends that appear on a user's public profile.
+
+
+*Request format:*
+
+{{{
+/api/v1/profile_friends/[user_name]?api_key=[api_key]
+}}}
+
+
+*Response format:*
+
+{{{
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <friend>
+    <user_name>colonel32</user_name>
+    <profile_url>http://www.ffwd.com/users/view/colonel32</profile_url>
+    <personal_url>http://www.planetotaku.com</personal_url>  
+    <image_url>http://images.ffwd.com/images/users/avatar_47_md.jpg</image_url>
+  </friend>
+  <friend>
+    <user_name>plinko</user_name>
+    <profile_url>http://www.ffwd.com/users/view/plinko</profile_url>
+    <personal_url/>
+    <image_url>http://images.ffwd.com/images/users/avatar_112_md.jpg</image_url>
+  </friend>
+</response>
+}}}
+
+
+
