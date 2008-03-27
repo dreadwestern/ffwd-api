@@ -24,7 +24,7 @@ See the method documentation for specific examples of each type of API request s
 
 == Data Formats ==
 
-The type of data returned is XML by default, but can also be returned as JSON for use in a Javascript application or widget. The `format` parameter is used to override the default data format returned.
+The type of data returned is XML by default, but can also be returned as JSON for use in a Javascript application or widget. The `type` parameter is used to override the default data format returned.
 
 For example, to return data as a JSON-encoded string, you would use:
 
