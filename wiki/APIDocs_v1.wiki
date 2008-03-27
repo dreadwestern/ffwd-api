@@ -7,6 +7,13 @@
 The FFWD API provides a REST-based way of interacting with the FFWD website using other applications or widgets. Because we are still in private beta, the documentation provided is a work in progress, and will be updated as we make more features of the API available to developers.
 
 
+== Authentication ==
+
+At the present time, we only require that you provide a valid developer key in the request in order to validate access. All requests require that you include the `api_key` request parameter.
+
+All our API methods currently return data that is publically viewable on the user's public profile page. As we continue to improve our API, we will be introducing an authentication mechanism that will allow developers to interact with private account data.
+
+
 == Making a Request ==
 
 All API requests are made by sending a validly formatted GET request string to our server using the API base URL, and any associated parameters required for the method you're using.
@@ -51,10 +58,3 @@ Error status is reported for each request. Custom error codes are listed in the 
 || 0 || No errors ||
 || 100 || Invalid URL or API method ||
 || 101 || Invalid API key authentication ||
-
-
-== Authentication ==
-
-At the present time, we only require that you provide a valid developer key in the request in order to validate access. All requests require that you include the `api_key` request parameter.
-
-All our API methods currently return data that is publically viewable on the user's public profile page. As we continue to improve our API, we will be introducing an authentication mechanism that will allow developers to interact with private account data.
