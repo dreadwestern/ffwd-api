@@ -11,7 +11,7 @@ The FFWD API provides a REST-based way of interacting with the FFWD website usin
 
 All API requests are made by sending a validly formatted GET request string to our server using the API base URL, and any associated parameters required for the method you're using.
 
-*API Base URL:* http://www.ffwd.com/api/v1/
+The API base URL is: http://www.ffwd.com/api/v1/
 
 For example, this request retrieves a user's public profile:
 
