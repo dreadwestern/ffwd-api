@@ -13,10 +13,42 @@ The following table lists the API methods that are currently available:
 || _personality_ || Returns the video personality type that appears on a user's profile page ||
 
 
-== Method Usage ==
+= Method Usage =
+
+=== profile ===
+
+*Description:* 
+
+Returns the user's public profile
 
 
+*Request format:*
+
+{{{
+/api/v1/profile/[user_name]?api_key=[api_key]
+}}}
 
 
+*Response format:*
 
-
+{{{
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <profile>
+    <user_name>dreadwestern</user_name>
+    <profile_url>http://www.ffwd.com/users/view/dreadwestern</profile_url>
+    <personal_url>http://otakulabs.com</personal_url>
+    <image_url>http://images.ffwd.com/images/users/avatar_2_md.jpg</image_url>
+    <gender>Male</gender>
+    <age>36</age>
+    <location/>
+    <interests>cooking, gear, movies, music (electronic), science fiction, technology</interests>
+    <personality>
+      <title>the hero</title>
+      <image_url>http://images.ffwd.com/images/personalities/15.jpg</image_url>
+    </personality>
+  </profile>
+</response>
+}}}
