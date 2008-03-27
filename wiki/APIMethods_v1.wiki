@@ -1,8 +1,8 @@
 #summary API Methods
 
-= Methods Lists =
+= Methods List =
 
-The following table lists the API methods that are currently available:
+The following API methods are currently available:
 
 || *Method* || *Description* ||
 || _profile_ || Returns the user's public profile ||
@@ -11,8 +11,6 @@ The following table lists the API methods that are currently available:
 || _profile_shares_ || Returns the list of recently shared videos that appear on a user's profile page ||
 || _profile_shows_ || Returns the list of favorite TV shows that appear on a user's profile page ||
 || _personality_ || Returns the video personality type that appears on a user's profile page ||
-
-----
 
 = Method Usage =
 
@@ -126,4 +124,3 @@ Returns the list of friends that appear on a user's public profile.
   </friend>
 </response>
 }}}
-
