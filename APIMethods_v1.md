@@ -1,0 +1,230 @@
+# Methods List #
+
+The following API methods are currently available:
+
+| **Method** | **Description** |
+|:-----------|:----------------|
+| profile | Returns the user's public profile |
+| profile\_favorites | Returns the list of favorite videos that appear on a user's public profile |
+| profile\_friends | Returns the list of favorite friends that appear on a user's public profile |
+| profile\_shares | Returns the list of recently shared videos that appear on a user's public profile |
+| profile\_shows | Returns the list of favorite TV shows that appear on a user's public profile |
+| personality | Returns the video personality type that appears on a user's public profile |
+
+
+Method descriptions and usage are provided below.
+
+
+## profile ##
+
+**Description:**
+
+Returns the user's public profile data.
+
+
+**Request format:**
+
+```
+/api/v1/profile/[user_name]?api_key=[api_key]
+```
+
+
+**Response format:**
+
+```
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <profile>
+    <user_name>dreadwestern</user_name>
+    <profile_url>http://www.ffwd.com/users/view/dreadwestern</profile_url>
+    <personal_url>http://otakulabs.com</personal_url>
+    <image_url>http://images.ffwd.com/images/users/avatar_2_md.jpg</image_url>
+    <gender>Male</gender>
+    <age>36</age>
+    <location/>
+    <interests>cooking, gear, movies, music (electronic), science fiction, technology</interests>
+    <personality>
+      <title>the hero</title>
+      <image_url>http://images.ffwd.com/images/personalities/15.jpg</image_url>
+    </personality>
+  </profile>
+</response>
+```
+
+
+
+## profile\_favorites ##
+
+**Description:**
+
+Returns the list of favorite videos that appear on a user's public profile.
+
+
+**Request format:**
+
+```
+/api/v1/profile_favorites/[user_name]?api_key=[api_key]
+```
+
+
+**Response format:**
+
+```
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <video>
+    <title>Synthesizer Medley 1985</title>
+    <image_url>http://images.ffwd.com/images/thumbs/8/1/81464_thumb.jpg</image_url>
+    <preview_url>http://www.ffwd.com/videos/view/81464</preview_url>
+  </video>
+  <video>
+    <title>Mr. Show: Three Times One Minus One</title>
+    <image_url>http://images.ffwd.com/images/thumbs/5/8/58474_thumb.jpg</image_url>
+    <preview_url>http://www.ffwd.com/videos/view/58474</preview_url>
+  </video>
+</response>
+```
+
+
+## profile\_friends ##
+
+**Description:**
+
+Returns the list of friends that appear on a user's public profile.
+
+
+**Request format:**
+
+```
+/api/v1/profile_friends/[user_name]?api_key=[api_key]
+```
+
+
+**Response format:**
+
+```
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <friend>
+    <user_name>colonel32</user_name>
+    <profile_url>http://www.ffwd.com/users/view/colonel32</profile_url>
+    <personal_url>http://www.planetotaku.com</personal_url>  
+    <image_url>http://images.ffwd.com/images/users/avatar_47_md.jpg</image_url>
+  </friend>
+  <friend>
+    <user_name>plinko</user_name>
+    <profile_url>http://www.ffwd.com/users/view/plinko</profile_url>
+    <personal_url/>
+    <image_url>http://images.ffwd.com/images/users/avatar_112_md.jpg</image_url>
+  </friend>
+</response>
+```
+
+
+## profile\_shares ##
+
+**Description:**
+
+Returns the list of recently shared videos that appear on a user's public profile.
+
+
+**Request format:**
+
+```
+/api/v1/profile_shares/[user_name]?api_key=[api_key]
+```
+
+
+**Response format:**
+
+```
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <video>
+    <title>Amy Winehouse Parody - Katy Brand Rehab Booze</title>
+    <image_url>http://images.ffwd.com/images/thumbs/1/2/125582_thumb.jpg</image_url>
+    <preview_url>http://www.ffwd.com/videos/view/125582</preview_url>
+  </video>
+  <video>
+    <title>Tim And Eric - Salame</title>
+    <image_url>http://images.ffwd.com/images/thumbs/2/0/200760_thumb.jpg</image_url>
+    <preview_url>http://www.ffwd.com/videos/view/200760</preview_url>
+  </video>
+</response>
+```
+
+
+
+## profile\_shows ##
+
+**Description:**
+
+Returns the list of favorite TV shows that appear on a user's public profile.
+
+
+**Request format:**
+
+```
+/api/v1/profile_shows/[user_name]?api_key=[api_key]
+```
+
+
+**Response format:**
+
+```
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <show>
+    <title>The Office</title>
+    <image_url>http://images.ffwd.com/images/shows/office_120.jpg</image_url>
+  </show>
+  <show>
+    <title>Lost</title>
+    <image_url>http://images.ffwd.com/images/shows/lost_120.jpg</image_url>
+  </show>
+</response>
+```
+
+
+
+## personality ##
+
+**Description:**
+
+Returns the user's video personality.
+
+
+**Request format:**
+
+```
+/api/v1/personality/[user_name]?api_key=[api_key]
+```
+
+
+**Response format:**
+
+```
+<?xml version="1.0"?>
+<response>
+  <status>1</status>
+  <message>No errors.</message>
+  <personality>
+    <title>the hero</title>
+    <image_url>http://images.ffwd.com/images/personalities/15.jpg</image_url>
+    <description>Ah, fellow traveler, you have chosen... wisely. You truly appreciate the art of the epic story.</description>
+  </personality>
+</response>
+```
+
+
+

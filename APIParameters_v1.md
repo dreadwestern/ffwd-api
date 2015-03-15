@@ -1,0 +1,9 @@
+## Parameters List ##
+
+The following parameters should be passed as part of the GET request string. Use standard HTML-escaped name/value pairs when passing these to our server.
+
+| **Parameter** | **Description** | **Type** | **Valid Values** | **Default Value** | **Is Required** |
+|:--------------|:----------------|:---------|:-----------------|:------------------|:----------------|
+| _api\_key_ | Validates API request | String | Your developer API key | None | Yes |
+| _type_ | Specifies which format is returned for request data | String | `xml` or `json` | `xml` | No |
+| _limit_ | Specifies a limit on number of items returned | Integer | A value greater than 0 | None | No |
